@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        border: 1px solid #666;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+      p {
+        margin: 10px 0;
+      }
+      .hidden-container {
+        border: 1px solid salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My form</h1>
+    <p>Practice on lesson</p>
+    <form action="/form-path">
+      <p>
+        <label for="name">Name:</label>
+      </p>
+      <input type="text" id="name" value="alex" name="name" />
+      <p>
+        <label for="email">Email:</label>
+      </p>
+      <input
+        type="text"
+        id="email"
+        value="lekha2000a@mail.ru"
+        name="email"
+        readonly
+      />
+      <p>
+        <label for="pwd">Password:</label>
+      </p>
+      <input type="password" id="pwd" name="pwd" style="margin-bottom: 10px" />
+
+      <!-- Hidden Input for timestamp -->
+      <input type="hidden" id="timestamp" name="timestamp" value="12345677" />
+    </form>
+  </body>
+</html>

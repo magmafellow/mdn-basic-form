@@ -1,0 +1,27 @@
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid gray;
+}
+fieldset {
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 10px 0;
+}
+fieldset {
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.submit-section {
+  text-align: center;
+}
+button {
+  display: inline-block;
+}
