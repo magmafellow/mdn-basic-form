@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    The value attribute within an option element can be omitted,
+    then text inside it will be sent to the server
+   -->
+
+    <h1>my form</h1>
+    <form action="/data">
+      <select name="colour" id="colour">
+        <option value="r">Red</option>
+        <option value="g" selected>Green</option>
+        <option value="bl">Blue</option>
+      </select>
+      <hr />
+      <select name="meal" id="meal" size="1">
+        <optgroup label="vegetables">
+          <option>Carrot</option>
+          <option>Tomato</option>
+          <option>Cucumber</option>
+        </optgroup>
+        <optgroup label="fruits">
+          <option>Banana</option>
+          <option>Apple</option>
+          <option>Pineapple</option>
+        </optgroup>
+      </select>
+      <hr />
+      <p>multi meal</p>
+      <select id="multi" name="multi" multiple size="4">
+        <optgroup label="fruits">
+          <option>Banana</option>
+          <option selected>Cherry</option>
+          <option>Lemon</option>
+        </optgroup>
+        <optgroup label="vegetables">
+          <option>Carrot</option>
+          <option>Eggplant</option>
+          <option>Potato</option>
+        </optgroup>
+      </select>
+      <hr />
+      <label for="myFruit">What's your favorite fruit?</label>
+      <input type="text" name="myFruit" id="myFruit" list="mySuggestion" />
+      <datalist id="mySuggestion">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+        <option>Blueberry</option>
+        <option>Lemon</option>
+        <option>Lychee</option>
+        <option>Peach</option>
+        <option>Pear</option>
+      </datalist>
+    </form>
+  </body>
+</html>
