@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">
+  <div style="text-align: center; font-size: 20px;">My form with html5 input types</div>
+  <form action="/">
+    <label for="email_field">
+      Email: 
+      <input type="email" id="email_field" name="email_field">
+    </label>
+    <div style="height: 10px;"></div>
+    <label for="search_field">
+      Search field: 
+      <input type="search" id="search_field" name="search_field">
+    </label>
+    <div style="height: 10px"></div>
+    <label for="tel_field">
+      Your tel:
+      <input type="tel" id="tel_field" name="tel_field">
+    </label>
+    <div style="height: 10px;"></div>
+    <label for="number_field">
+      Your number:
+      <input type="number" id="number_field" name="number_field" step="2" min="1" max="10">
+    </label>
+    <div style="height: 10px;"></div>
+    <label for="house-price_field">
+      House price
+      <input type="range" id="house-price_field" name="house-price_field" min="10000" max="99999" step="100" value="15000" >
+      <output class="house-price-output" for="house-price_field"></output>
+    </label>
+    <div style="height: 10px;"></div>
+    <label for="datetime">
+      Datetime: 
+      <input type="datetime-local" name="datetime" id="datetime" />
+    </label>
+    <div style="height: 10px"></div>
+    <label for="month">
+      Month: 
+      <input type="month" id="month" name="month">
+    </label>
+    <div style="height: 10px"></div>
+    <label for="time">
+      Time: 
+      <input type="time" id="time" name="time">
+    </label>
+    <div style="height: 10px"></div>
+    <label for="week">
+      Week: 
+      <input type="week" id="week" name="week">
+    </label>
+    <div style="height: 10px;"></div>
+    <label for="color">
+      Colour:
+      <input type="color" id="color" name="color">
+    </label>
+  </form>
+  <script src="output.js"></script>
+</body>
+</html>
